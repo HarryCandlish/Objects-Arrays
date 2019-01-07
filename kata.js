@@ -4,10 +4,13 @@
 
 // getGreeting should return a string containing 'Hello ' and the contents of `name`
 function getGreeting (name) {
+  return "Hello " + name;
 }
 
 // ageOneYear should add one to the `age` property of `obj`
 function ageOneYear (obj) {
+  
+  obj.age = obj.age + 1 ;
 }
 
 // makeObject should return an object that looks like this:
@@ -16,6 +19,12 @@ function ageOneYear (obj) {
 //   key: value
 // }
 function makeObject (key, value) {
+  var obj = {
+    // key: value
+  };
+  
+  obj[key] = value;
+  return obj;
 }
 
 // getValue should return the value of the property contained in `key`
