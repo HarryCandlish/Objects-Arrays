@@ -73,7 +73,13 @@ function values(obj) {
 // makeArrayOfItem should return an array that is `length` long, made up of `item`
 // For example, makeArrayOfItem('foo', 2) would return:
 // ['foo', 'foo']
-function makeArrayOfItem(item, length) {}
+function makeArrayOfItem(item, length) {
+  var arr = [];
+  for (var i = 0; i < length; i++) {
+    arr.push(item);
+  }
+  return arr;
+}
 
 // makeArrayOfItems should return an array containing all arguments passed to it
 // Tip: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
