@@ -115,7 +115,11 @@ function replaceItemAtIndex(arr, idx, item) {
 
 // insertItemAtIndex should insert `item` at `idx` without overwriting
 // any array values (the array should get longer)
-function insertItemAtIndex(arr, item, idx) {}
+function insertItemAtIndex(arr, item, idx) {
+  arr.splice(idx, 0, item);
+  console.log(arr);
+  return arr;
+}
 
 // deleteItemAtIndex should remove the element at `idx` (the array
 // should get shorter).
