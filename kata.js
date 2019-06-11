@@ -83,7 +83,13 @@ function makeArrayOfItem(item, length) {
 
 // makeArrayOfItems should return an array containing all arguments passed to it
 // Tip: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
-function makeArrayOfItems() {}
+function makeArrayOfItems() {
+  const arr = [];
+  for (let value in arguments) {
+    arr.push(arguments[value]);
+  }
+  return arr;
+}
 
 // hasItem should return true if `item` is present in `arr` at least once,
 // otherwise it should return false.
