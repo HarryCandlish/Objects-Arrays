@@ -117,13 +117,19 @@ function replaceItemAtIndex(arr, idx, item) {
 // any array values (the array should get longer)
 function insertItemAtIndex(arr, item, idx) {
   arr.splice(idx, 0, item);
+  // at index postion idx(3), remove 0 elements, add item
   console.log(arr);
   return arr;
 }
 
 // deleteItemAtIndex should remove the element at `idx` (the array
 // should get shorter).
-function deleteItemAtIndex(arr, idx) {}
+function deleteItemAtIndex(arr, idx) {
+  arr.splice(idx, 1);
+  // at index position remove 1 element
+  console.log(arr);
+  return arr;
+}
 
 // deleteItem should return an array with every instance of `item` removed
 function deleteItem(arr, item) {}
