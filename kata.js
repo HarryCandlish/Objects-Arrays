@@ -30,7 +30,10 @@ function getValue(obj, key) {
 }
 
 // addName should add a `name` property to the object with the value of the `name` argument
-function addName(obj, name) {}
+function addName(obj, name) {
+  console.log(name);
+  return (obj.name = name);
+}
 
 // deleteProperty should remove the property contained in `key` from `obj`
 // Tip: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
