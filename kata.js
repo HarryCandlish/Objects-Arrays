@@ -8,7 +8,9 @@ function getGreeting(name) {
 }
 
 // ageOneYear should add one to the `age` property of `obj`
-function ageOneYear(obj) {}
+function ageOneYear(obj) {
+  return (obj.age += 1);
+}
 
 // makeObject should return an object that looks like this:
 // (but using the arguments passed to the function)
