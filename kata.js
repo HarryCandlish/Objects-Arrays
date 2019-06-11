@@ -17,10 +17,18 @@ function ageOneYear(obj) {
 // {
 //   key: value
 // }
-function makeObject(key, value) {}
+function makeObject(key, value) {
+  var obj = {};
+  obj[key] = value;
+  console.log(obj);
+  return obj;
+}
 
 // getValue should return the value of the property contained in `key`
-function getValue(obj, key) {}
+function getValue(obj, key) {
+  console.log(obj[key]);
+  return obj[key];
+}
 
 // addName should add a `name` property to the object with the value of the `name` argument
 function addName(obj, name) {}
