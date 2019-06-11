@@ -61,7 +61,10 @@ function keys(obj) {
 
 // values should return an array of the object's own values
 // For example, given {foo: 1, bar: 2} it would return [1, 2]
-function values(obj) {}
+function values(obj) {
+  console.log(Object.values(obj));
+  return Object.values(obj);
+}
 
 /**
  * Arrays
