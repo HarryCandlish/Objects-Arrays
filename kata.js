@@ -54,7 +54,10 @@ function returnErrorIfFalsy(val) {
 
 // keys should return an array of the object's property names (keys)
 // For example, given {foo: 1, bar: 2} it would return ['foo', 'bar']
-function keys(obj) {}
+function keys(obj) {
+  console.log(Object.keys(obj));
+  return Object.keys(obj);
+}
 
 // values should return an array of the object's own values
 // For example, given {foo: 1, bar: 2} it would return [1, 2]
