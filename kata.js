@@ -37,7 +37,10 @@ function addName(obj, name) {
 
 // deleteProperty should remove the property contained in `key` from `obj`
 // Tip: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
-function deleteProperty(obj, key) {}
+function deleteProperty(obj, key) {
+  console.log(obj[key]);
+  return delete obj[key];
+}
 
 // returnErrorIfFalsy should return a JavaScript Error object with message:
 //   'Oh no, an error!'
