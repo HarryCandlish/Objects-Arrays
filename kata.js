@@ -141,7 +141,12 @@ function deleteItem(arr, item) {
 // zipObject should return an object built from two arrays
 // For example, given ['foo', 'bar'] and [1, 2] it would return
 // {foo: 1, bar: 2}
-function zipObject(keys, values) {}
+function zipObject(keys, values) {
+  var result = {};
+  keys.forEach((key, i) => (result[key] = values[i]));
+  console.log(result);
+  return result;
+}
 
 // unzipObject should return an array of arrays, each one a pair of keys and values
 // For example, given {foo: 1, bar: 2} it would return
