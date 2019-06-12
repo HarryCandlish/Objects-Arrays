@@ -127,12 +127,16 @@ function insertItemAtIndex(arr, item, idx) {
 function deleteItemAtIndex(arr, idx) {
   arr.splice(idx, 1);
   // at index position remove 1 element
-  console.log(arr);
+
   return arr;
 }
 
 // deleteItem should return an array with every instance of `item` removed
-function deleteItem(arr, item) {}
+function deleteItem(arr, item) {
+  return arr.filter(x => {
+    return x !== item;
+  });
+}
 
 // zipObject should return an object built from two arrays
 // For example, given ['foo', 'bar'] and [1, 2] it would return
